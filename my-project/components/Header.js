@@ -13,20 +13,23 @@ function Header()
     return(
         <div className="shadow-sm border-b bg-white sticky top-0 z-50">
             
-            <div className="flex justify-between bg-white max-w-6xl ">
+            <div className="flex justify-between bg-white max-w-6xl mx-5 lg:mx-auto">
 
-                <div className="relative hidden lg:inline-grid w-24">
+                <div className="relative hidden lg:inline-grid w-24 cursor-pointer">
 
                     <Image src={logo} layout='fill' objectFit='contain'/>
 
                 </div>
 
-                <div className="relative w-10 lg:hidden flex-shrink-0">
+                
+                <div className="relative w-10 lg:hidden flex-shrink-0 cursor-pointer">
 
                     <Image src={logo_small} layout='fill' objectFit='contain'/>
 
                 </div>
 
+                
+                
                 {/* middle side area - make search bar*/}
 
                 <div className="relative mt-1 p-3 rounded-md">
@@ -43,19 +46,22 @@ function Header()
 
                 </div>
 
+                
+                
                 {/* right side area */}
 
                 <div className="flex items-center justify-end space-x-4">
                     
                     <HomeIcon className=" nevbtn"/>
 
-                    <MenuIcon className=" h-10 w-10 md:hidden"/>
+                    <MenuIcon className=" h-6 md:hidden cursor-pointer"/>
 
                     <div className="relative navBtn">
                         
                         <BellIcon className=" nevbtn"/>
 
-                        <div className="absolute -top-1 -right-2 text-xs w-5 h-5 bg-blue-500 rounded-full flex items-center justify-center animate-bounce text-white">1</div>
+                        <div className="absolute -top-1 -right-1 text-xs w-5 h-5
+                        bg-blue-500 rounded-full flex items-center justify-center animate-bounce text-white">4</div>
                     
                     </div>
 
@@ -68,9 +74,6 @@ function Header()
                     <img src={pro_pic} alt="my profile" className="h-4 rounded-full cursor-pointer"/>                    
 
                 </div>
-
-                
-
             </div>
         </div>
     )
